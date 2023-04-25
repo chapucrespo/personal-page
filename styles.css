@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300&family=Sawarabi+Gothic&display=swap');
+
 :root {
     --dark_purple: #2C1320;
     --carnation_pink: #FFADC6;
     --uranian_blue: #ACD7EC;
     --vanilla: #F2F3AE;
+}
+
+body {
+    background-color: var(--carnation_pink);
+    color: var(--dark_purple);
+}
+
+.centered-container {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 45px;
 }
