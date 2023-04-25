@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300&family=Sawarabi+Gothic&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;500&family=Sawarabi+Gothic&display=swap');
 :root {
     --dark_purple: #2C1320;
     --carnation_pink: #FFADC6;
     --uranian_blue: #ACD7EC;
     --vanilla: #F2F3AE;
+    --mobile: 767;
+    --tablet: 1023;
+    --desktop: 1280;
 }
 
 body {
     background-color: var(--carnation_pink);
     color: var(--dark_purple);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-weight: 500;
 }
 
 .centered-container {
@@ -17,7 +24,36 @@ body {
     text-align: center;
 }
 
+.flex-container {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.fifty-width {
+    width: 50%;
+}
+
 .title {
     font-family: 'Abril Fatface', cursive;
     font-size: 45px;
 }
+
+
+@media only screen and (max-width: 500px) {
+    .heart-decoration {
+        visibility: hidden;
+    }
+}
+.heart-container {
+    width: 25%;
+    display: flex;
+  }
+
+.pixelart-to-css-heart {
+    box-shadow: 60px 40px 0 0 rgba(233, 30, 99, 1), 70px 40px 0 0 rgba(233, 30, 99, 1), 80px 40px 0 0 rgba(233, 30, 99, 1), 120px 40px 0 0 rgba(233, 30, 99, 1), 130px 40px 0 0 rgba(233, 30, 99, 1), 140px 40px 0 0 rgba(233, 30, 99, 1), 50px 50px 0 0 rgba(233, 30, 99, 1), 60px 50px 0 0 rgba(255, 255, 255, 1), 70px 50px 0 0 rgba(255, 255, 255, 1), 80px 50px 0 0 rgba(255, 255, 255, 1), 90px 50px 0 0 rgba(233, 30, 99, 1), 110px 50px 0 0 rgba(233, 30, 99, 1), 120px 50px 0 0 rgba(233, 30, 99, 1), 130px 50px 0 0 rgba(233, 30, 99, 1), 140px 50px 0 0 rgba(233, 30, 99, 1), 150px 50px 0 0 rgba(233, 30, 99, 1), 50px 60px 0 0 rgba(233, 30, 99, 1), 60px 60px 0 0 rgba(255, 255, 255, 1), 70px 60px 0 0 rgba(255, 255, 255, 1), 80px 60px 0 0 rgba(233, 30, 99, 1), 90px 60px 0 0 rgba(233, 30, 99, 1), 100px 60px 0 0 rgba(233, 30, 99, 1), 110px 60px 0 0 rgba(233, 30, 99, 1), 120px 60px 0 0 rgba(233, 30, 99, 1), 130px 60px 0 0 rgba(233, 30, 99, 1), 140px 60px 0 0 rgba(233, 30, 99, 1), 150px 60px 0 0 rgba(233, 30, 99, 1), 50px 70px 0 0 rgba(233, 30, 99, 1), 60px 70px 0 0 rgba(255, 255, 255, 1), 70px 70px 0 0 rgba(233, 30, 99, 1), 80px 70px 0 0 rgba(233, 30, 99, 1), 90px 70px 0 0 rgba(233, 30, 99, 1), 100px 70px 0 0 rgba(233, 30, 99, 1), 110px 70px 0 0 rgba(233, 30, 99, 1), 120px 70px 0 0 rgba(233, 30, 99, 1), 130px 70px 0 0 rgba(233, 30, 99, 1), 140px 70px 0 0 rgba(233, 30, 99, 1), 150px 70px 0 0 rgba(233, 30, 99, 1), 50px 80px 0 0 rgba(233, 30, 99, 1), 60px 80px 0 0 rgba(233, 30, 99, 1), 70px 80px 0 0 rgba(233, 30, 99, 1), 80px 80px 0 0 rgba(233, 30, 99, 1), 90px 80px 0 0 rgba(233, 30, 99, 1), 100px 80px 0 0 rgba(233, 30, 99, 1), 110px 80px 0 0 rgba(233, 30, 99, 1), 120px 80px 0 0 rgba(233, 30, 99, 1), 130px 80px 0 0 rgba(233, 30, 99, 1), 140px 80px 0 0 rgba(233, 30, 99, 1), 150px 80px 0 0 rgba(233, 30, 99, 1), 60px 90px 0 0 rgba(233, 30, 99, 1), 70px 90px 0 0 rgba(233, 30, 99, 1), 80px 90px 0 0 rgba(233, 30, 99, 1), 90px 90px 0 0 rgba(233, 30, 99, 1), 100px 90px 0 0 rgba(233, 30, 99, 1), 110px 90px 0 0 rgba(233, 30, 99, 1), 120px 90px 0 0 rgba(233, 30, 99, 1), 130px 90px 0 0 rgba(233, 30, 99, 1), 140px 90px 0 0 rgba(233, 30, 99, 1), 70px 100px 0 0 rgba(233, 30, 99, 1), 80px 100px 0 0 rgba(233, 30, 99, 1), 90px 100px 0 0 rgba(233, 30, 99, 1), 100px 100px 0 0 rgba(233, 30, 99, 1), 110px 100px 0 0 rgba(233, 30, 99, 1), 120px 100px 0 0 rgba(233, 30, 99, 1), 130px 100px 0 0 rgba(233, 30, 99, 1), 80px 110px 0 0 rgba(233, 30, 99, 1), 90px 110px 0 0 rgba(233, 30, 99, 1), 100px 110px 0 0 rgba(233, 30, 99, 1), 110px 110px 0 0 rgba(233, 30, 99, 1), 120px 110px 0 0 rgba(233, 30, 99, 1), 90px 120px 0 0 rgba(233, 30, 99, 1), 100px 120px 0 0 rgba(233, 30, 99, 1), 110px 120px 0 0 rgba(233, 30, 99, 1), 100px 130px 0 0 rgba(233, 30, 99, 1);
+    height: 10px;
+    width: 10px;
+    display: block;
+  }
